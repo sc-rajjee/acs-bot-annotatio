@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ScryAI Teams Bot</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            max-width: 900px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+        }
+
+        button {
+            padding: 12px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        #status {
+            margin-top: 25px;
+            padding: 15px;
+            background: #f3f3f3;
+            border-radius: 6px;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>ScryAI Teams Bot</h1>
+
+    <p>Enter a Microsoft Teams meeting URL:</p>
+
+    <input
+        id="teams-link"
+        type="text"
+        placeholder="https://teams.microsoft.com/l/meetup-join/..."
+    >
+
+    <button id="join-button">
+        Join Teams Meeting
+    </button>
+
+    <button id="leave-button" disabled>
+        Leave Meeting
+    </button>
+
+    <div id="status">
+        Status: Ready
+    </div>
+
+    <script src="/bundle.js"></script>
+
+</body>
+</html>
